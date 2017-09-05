@@ -24,7 +24,7 @@ module.exports = {
 
         var typedTree = FastbootTransform(new Funnel(path.join(path.dirname(require.resolve('typed.js'))), {
             destDir: 'typed.js',
-            include: ['typed.min.js']
+            files: ['typed.min.js']
         }));
 
         if ( vendorTree !== undefined ) { trees.push(vendorTree); }
